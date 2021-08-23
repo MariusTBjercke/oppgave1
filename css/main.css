@@ -1,0 +1,97 @@
+/* Generell styling - START */
+
+table td { 
+    border: 1px solid hotpink;
+}
+
+td {
+    height: 150px;
+    width: 150px;
+    font-size: 69px;
+    text-align: center;
+}
+
+#winning-text {
+    display: none;
+}
+
+/* Generell styling - END */
+
+/* Thorbjørns style - START */
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    line-height: auto;
+    max-width: 450px; 
+}
+
+.grid-1 div {
+    border: solid black;
+    padding: 5vh;
+}
+
+.grid-1 div:hover {
+    cursor: pointer;
+    background: rgba(193, 66, 66, 0.3);
+
+}
+
+/* Thorbjørns style - END */
+
+/* Marius style - START */
+
+.flexbox-container {
+    display: flex;
+    width: 450px;
+    flex-wrap: wrap;
+    border: 1px solid #000000;
+}
+
+.flexbox-container div {
+    background-color: #ffffff;
+    width: 150px;
+    height: 150px;
+    font-family: "Permanent Marker", cursive;
+    cursor: pointer;
+    line-height: 150px;
+    text-align: center;
+    font-size: 6em;
+}
+
+.flexbox-container div:hover {
+    background-color: #dd7d00 !important;
+}
+
+.flexbox-container div:nth-child(odd) {
+    background-color: rgb(100, 100, 100);
+}
+
+/* Marius style - END */
+
+/* Thomas style - START */
+
+.row {
+    width: 306px;
+}
+
+.row div {
+    box-sizing: border-box;
+    float: left;
+    padding: 50px;
+    border-radius: 5px;
+    border: 5px;
+    background-color: blue;
+    margin: 1px;
+    width: 50px;
+    height: 40px;
+    
+}
+
+.row div:hover{
+    background-color: lightcoral;
+}
+
+/* Thomas style - END */
