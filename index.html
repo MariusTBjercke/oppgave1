@@ -4,72 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Teamoppgave ?</title>
+    <title>Teamoppgave Uke 3</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
-<div id="round-1">
+    <section>
 
-    <div class="grid-1">
-        <div onclick="changeOnClick(this)" class="item-1">1</div>
-        <div onclick="changeOnClick(this)" class="item-2">2</div>
-        <div onclick="changeOnClick(this)" class="item-3">3</div>
-     
-        <div onclick="changeOnClick(this)" class="item-4">4</div>
-        <div onclick="changeOnClick(this)" class="item-5">5</div>
-        <div onclick="changeOnClick(this)" class="item-6">6</div>
-     
-        <div onclick="changeOnClick(this)" class="item-7">7</div>
-        <div onclick="changeOnClick(this)" class="item-8">8</div>
-        <div onclick="changeOnClick(this)" class="item-9">9</div>
-     </div>
+        <div id="round-1">
 
-</div>
+            <h2>Første runde</h2>
 
-<div id="round-2">
+            <p>Trykk på innsiden av rutene for å fylle de med bilder.</p>
 
-    <div class="flexbox-container">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+            <div class="floating-box">
+                <p>Denne runden er satt opp med <span>CSS Grid</span></p>
+            </div>
 
-</div>
+            <!-- CSS Grid - START -->
+            <div class="grid-1">
+                <div onclick="changeOnClick(this)" class="item-1"></div>
+                <div onclick="changeOnClick(this)" class="item-2"></div>
+                <div onclick="changeOnClick(this)" class="item-3"></div>
 
-<div id="round-3">
+                <div onclick="changeOnClick(this)" class="item-4"></div>
+                <div onclick="changeOnClick(this)" class="item-5"></div>
+                <div onclick="changeOnClick(this)" class="item-6"></div>
 
-    <div class="row">
-        <div id="kube1" class="first">kube1</div>
-        <div id="kube2" class="second">kube2</div>
-        <div id="kube3" class="third">kube3</div>
-    </div>
+                <div onclick="changeOnClick(this)" class="item-7"></div>
+                <div onclick="changeOnClick(this)" class="item-8"></div>
+                <div onclick="changeOnClick(this)" class="item-9"></div>
+            </div>
+            <!-- CSS Grid - END -->
 
-    <div class="row">
-        <div id="kube4" class="second">kube4</div>
-        <div id="kube5" class="first">kube 5</div>
-        <div id="kube6" class="third">kube 6</div>
-    </div>
+        </div>
 
-    <div class="row">
-        <div id="kube7" class="first">kube 7</div>
-        <div id="kube8" class="second">kube 8</div>
-        <div id="kube9" class="third">kube 9</div>
-    </div>
+        <div id="round-2">
 
-</div>
+            <h2>Andre runde</h2>
 
-<div id="winning-text">
-    <h2>Spillet er fullført!</h2>
-    <img src="img/terje.png" title="Terje" alt="Terje">
-</div>
+            <div class="floating-box">
+                <p>Denne runden er satt opp med <span>Flexbox</span></p>
+            </div>
 
-<script src="js/main.js"></script>
+            <!-- Flexbox - START -->
+            <div class="flexbox-container">
+                <div onclick="changeOnClick(this)"></div>
+                <div onclick="changeOnClick(this)"></div>
+                <div onclick="changeOnClick(this)"></div>
+                <div onclick="changeOnClick(this)"></div>
+                <div onclick="changeOnClick(this)"></div>
+                <div onclick="changeOnClick(this)"></div>
+                <div onclick="changeOnClick(this)"></div>
+                <div onclick="changeOnClick(this)"></div>
+                <div onclick="changeOnClick(this)"></div>
+            </div>
+            <!-- Flexbox - END -->
+
+        </div>
+
+        <div id="round-3">
+
+            <h2>Tredje og siste runde</h2>
+
+            <div class="floating-box">
+                <p>Denne runden er satt opp med <span>Float</span></p>
+            </div>
+
+            <!-- Float - START -->
+
+            <div id="float-container">
+
+                <div class="row">
+                    <div id="kube1" class="first" onclick="changeOnClick(this)"></div>
+                    <div id="kube2" class="second" onclick="changeOnClick(this)"></div>
+                    <div id="kube3" class="third" onclick="changeOnClick(this)"></div>
+                </div>
+
+                <div class="row">
+                    <div id="kube4" class="second" onclick="changeOnClick(this)"></div>
+                    <div id="kube5" class="first" onclick="changeOnClick(this)"></div>
+                    <div id="kube6" class="third" onclick="changeOnClick(this)"></div>
+                </div>
+
+                <div class="row">
+                    <div id="kube7" class="first" onclick="changeOnClick(this)"></div>
+                    <div id="kube8" class="second" onclick="changeOnClick(this)"></div>
+                    <div id="kube9" class="third" onclick="changeOnClick(this)"></div>
+                </div>
+
+            </div>
+
+            <!-- Float - START -->
+
+        </div>
+
+        <div id="winning-text">
+            <h2>Runden ble fullført!</h2>
+            <img src="img/terje.png" title="Terje" alt="Terje">
+            <button id="next-button">Neste runde</button>
+        </div>
+
+        <div id="final-winning-text">
+            <h2>Du har fullført alle rundene!</h2>
+            <img src="img/terje.png" title="Terje" alt="Terje">
+            <button id="restart-button">Restart</button>
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

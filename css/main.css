@@ -11,7 +11,44 @@ td {
     text-align: center;
 }
 
-#winning-text {
+#winning-text, #final-winning-text {
+    display: none;
+}
+
+#winning-text img, #final-winning-text img {
+    display: block;
+}
+
+#winning-text button, #final-winning-text button {
+    margin-top: 10px;
+}
+
+section {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.floating-box {
+    position: absolute;
+    padding: 2vh;
+    border: 1px solid #000000;
+    background-color:#ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #000000;
+    right: 0;
+}
+
+.floating-box span {
+    text-decoration: underline;
+}
+
+#round-2 {
+    display: none;
+}
+
+#round-3 {
     display: none;
 }
 
@@ -25,12 +62,13 @@ td {
     grid-template-rows: auto auto auto;
     text-align: center;
     line-height: auto;
-    max-width: 450px; 
+    max-width: 450px;
 }
 
 .grid-1 div {
-    border: solid black;
-    padding: 5vh;
+    border: 1px solid black;
+    min-width: 150px;
+    min-height: 150px;
 }
 
 .grid-1 div:hover {
@@ -59,6 +97,7 @@ td {
     line-height: 150px;
     text-align: center;
     font-size: 6em;
+    transition: .3s;
 }
 
 .flexbox-container div:hover {
@@ -74,7 +113,7 @@ td {
 /* Thomas style - START */
 
 .row {
-    width: 306px;
+    width: 456px;
 }
 
 .row div {
@@ -85,13 +124,18 @@ td {
     border: 5px;
     background-color: blue;
     margin: 1px;
-    width: 50px;
-    height: 40px;
+    width: 150px;
+    height: 150px;
     
 }
 
 .row div:hover{
     background-color: lightcoral;
+}
+
+#float-container {
+    width: 456px;
+    height: 456px;
 }
 
 /* Thomas style - END */
