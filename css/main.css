@@ -60,8 +60,6 @@ section {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    text-align: center;
-    line-height: auto;
     max-width: 450px;
 }
 
@@ -74,7 +72,6 @@ section {
 .grid-1 div:hover {
     cursor: pointer;
     background: rgba(193, 66, 66, 0.3);
-
 }
 
 /* Thorbjørns style - END */
@@ -92,11 +89,7 @@ section {
     background-color: #ffffff;
     width: 150px;
     height: 150px;
-    font-family: "Permanent Marker", cursive;
     cursor: pointer;
-    line-height: 150px;
-    text-align: center;
-    font-size: 6em;
     transition: .3s;
 }
 
@@ -119,7 +112,6 @@ section {
 .row div {
     box-sizing: border-box;
     float: left;
-    padding: 50px;
     border-radius: 5px;
     border: 5px;
     background-color: blue;
