@@ -26,21 +26,16 @@ function changeOnClick(element) {
     } else if (counter === 8 && roundCounter === 3) {
         finalWinningText.style.display = "block";
     } else {
-        // Teller oppover for hvert trykk (+1)
         counter++;
     }
 
 }
 
-// Gå til neste runde ved å trykke på knapp
 nextButton.onclick = function() {
-    // Hvis roundCounter er 2 så setter vi style "display" til "none" på runden som var og setter "display" til "inherit" på neste runde for at den skal vises.
     if (roundCounter === 2) {
         document.getElementById("round-1").style.display = "none";
         document.getElementById("round-2").style.display = "block";
-        // Skjuler "Runden ble fullført!" teksten
         winningText.style.display = "none";
-        // Nullstiller counter slik at man kan starte spillet på nytt
         counter = 0;
     } else if (roundCounter === 3) {
         document.getElementById("round-2").style.display = "none";
@@ -50,7 +45,7 @@ nextButton.onclick = function() {
     }
 }
 
-// Restart spill, omdiriger nettleser til index.html (tilbake til forsiden)
+// Restart spill, omdiriger nettleser til index.html
 restartButton.onclick = function() {
     document.location.href = "index.html";
 }
